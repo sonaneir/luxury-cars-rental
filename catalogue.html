@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue — Luxury Cars Rental</title>
+    <link rel="stylesheet" href="styles-landing.css">
+    <link rel="stylesheet" href="styles-catalogue.css">
+    <link rel="stylesheet" href="styles-modal.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">View Catalogue</a>
+        <div>
+            <h1>Luxury Cars Rental</h1>
+            <p>Driven by Perfection</p>
+        </div>
+        <a href="about.html">About Us</a>
+    </nav>
+    <section class="catalogue-hero">
+        <h2>Our Fleet</h2>
+        <p>Choose your perfect ride</p>
+    </section>
+    <section class="catalogue-grid">
+        <div class="car-card">
+            <img src="/content/bentley.jpg" alt="Bentley Flying Spur">
+            <div class="car-info">
+                <h3>Bentley Flying Spur</h3>
+                <p>The pinnacle of grand touring luxury.</p>
+                <span class="price">From $1,200 / day</span>
+                <button onclick="openModal()">Reserve Now</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="/content/mercedes.jpg" alt="Mercedes AMG GT">
+            <div class="car-info">
+                <h3>Mercedes AMG GT</h3>
+                <p>Raw power meets refined elegance.</p>
+                <span class="price">From $950 / day</span>
+                <button onclick="openModal()">Reserve Now</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="/content/rollsroyce.jpg" alt="Rolls-Royce Ghost">
+            <div class="car-info">
+                <h3>Rolls-Royce Ghost</h3>
+                <p>For those who need no introduction.</p>
+                <span class="price">From $2,000 / day</span>
+                <button onclick="openModal()">Reserve Now</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="/content/lamborghini.jpg" alt="Lamborghini Urus">
+            <div class="car-info">
+                <h3>Lamborghini Urus</h3>
+                <p>The super SUV that does it all.</p>
+                <span class="price">From $1,500 / day</span>
+                <button onclick="openModal()">Reserve Now</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="/content/porsche.jpg" alt="Porsche 911">
+            <div class="car-info">
+                <h3>Porsche 911</h3>
+                <p>An icon. Timeless and thrilling.</p>
+                <span class="price">From $800 / day</span>
+                <button onclick="openModal()">Reserve Now</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="/content/ferrari.jpg" alt="Ferrari Roma">
+            <div class="car-info">
+                <h3>Ferrari Roma</h3>
+                <p>Italian passion in its purest form.</p>
+                <span class="price">From $1,800 / day</span>
+                <button onclick="openModal()">Reserve Now</button>
+            </div>
+        </div>
+    </section>
+    <div class="modal-overlay" id="reserveModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+            <h3>Reserve Your Car</h3>
+            <form id="reserveForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="date" required>
+                <input type="date" required>
+                <div class="modal-buttons">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn-confirm">Confirm Reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Luxury Cars Rental</p>
+    </footer>
+    <script src="modal.js"></script>
+</body>
+</html>

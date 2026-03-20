@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Cars Rental</title>
+    <link rel="stylesheet" href="styles-landing.css">
+    <link rel="stylesheet" href="styles-modal.css">
+    <style>
+        h1 { font-size: 32px; }
+        h2 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="catalogue.html">View Catalogue</a>
+        <div>
+            <h1>Luxury Cars Rental</h1>
+            <p>Driven by Perfection</p>
+        </div>
+        <a href="about.html">About Us</a>
+    </nav>
+    <section class="hero" style="background-image: url('/content/rollsroyce.jpg'); background-size: cover; background-position: center;">
+        <h2>Rolls-Royce Ghost</h2>
+        <p>For those who need no introduction.</p>
+        <button style="color: white; border-color: white;" onclick="openModal()">Reserve Now</button>
+    </section>
+    <section class="services">
+        <div class="card">
+            <img src="/content/concierge.jpg" alt="Concierge">
+            <h3>24/7 Personal Concierge</h3>
+            <p>Available around the clock to assist with reservations.</p>
+        </div>
+        <div class="card">
+            <img src="/content/airport.png" alt="Airport">
+            <h3>VIP Airport Delivery</h3>
+            <p>Delivered to your private jet terminal or hotel.</p>
+        </div>
+        <div class="card">
+            <img src="/content/car.webp" alt="Fleet">
+            <h3>Fully Insured Fleet</h3>
+            <p>Every vehicle is insured and meticulously maintained.</p>
+        </div>
+        <div class="card">
+            <img src="/content/global.jpg" alt="Global">
+            <h3>Worldwide Availability</h3>
+            <p>From Dubai to Monaco, we are there.</p>
+        </div>
+        <div class="card">
+            <img src="/content/privacy.jpg" alt="Privacy">
+            <h3>Privacy & Discretion</h3>
+            <p>Complete discretion for high-profile clients.</p>
+        </div>
+    </section>
+    <section class="testimonial">
+        <p>"Everything was seamless from start to finish. I'll definitely be booking again."</p>
+        <p>— Daniel R. ★★★★★</p>
+    </section>
+    <section class="cta">
+        <h2>Ready to Drive the Extraordinary?</h2>
+        <button onclick="openModal()">Reserve Your Car Today</button>
+    </section>
+    <div class="modal-overlay" id="reserveModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+            <h3>Reserve Your Car</h3>
+            <form id="reserveForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="date" required>
+                <input type="date" required>
+                <div class="modal-buttons">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn-confirm">Confirm Reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Luxury Cars Rental</p>
+    </footer>
+    <script src="modal.js"></script>
+</body>
+</html>
