@@ -3,90 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue — Luxury Cars Rental</title>
-    <link rel="stylesheet" href="styles-landing.css">
-    <link rel="stylesheet" href="styles-catalogue.css">
-    <link rel="stylesheet" href="styles-modal.css">
+    <title>Luxury Car Catalogue | Rent a Rolls-Royce, Ferrari, Bentley & More</title>
+    <meta name="description" content="Drive a Rolls-Royce Ghost or other unique cars. Book your high-end rental today. Rent a luxury car from our unique fleet. We offer worldwide availability and service.">
+    <meta name="keywords" content="luxury sedan rentals, rent a Rolls-Royce Ghost, book your luxury car now, luxury cars for any occasion, worldwide car availability, reserve your car worldwide, private car rental service, Bentley Flying Spur rental, Ferrari Roma rental, Lamborghini Urus rental, Porsche 911 rental, Mercedes AMG GT rental">
+    <link rel="stylesheet" href="./styles/styles-landing.css">
+    <link rel="stylesheet" href="./styles/styles-catalogue.css">
+    <link rel="stylesheet" href="./styles/styles-modal.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <div>
-            <h1>Luxury Cars Rental</h1>
-            <p>Driven by Perfection</p>
-        </div>
-        <a href="about.html">About Us</a>
-    </nav>
-    <section class="catalogue-hero">
-        <h2>Our Fleet</h2>
-        <p>Choose your perfect ride</p>
-    </section>
-    <section class="catalogue-grid">
-        <div class="car-card">
-            <img src="./content/bentley.jpg" alt="Bentley Flying Spur">
-            <div class="car-info">
-                <h3>Bentley Flying Spur</h3>
-                <p>The pinnacle of grand touring luxury.</p>
-                <span class="price">From $1,200 / day</span>
-                <button onclick="openModal()">Reserve Now</button>
+
+    <header>
+        <nav>
+            <a href="index.html">Back to Home</a>
+            <div>
+                <h1>Luxury Cars Rental</h1>
+                <p>Driven by Perfection</p>
             </div>
-        </div>
-        <div class="car-card">
-            <img src="./content/mercedes.jpg" alt="Mercedes AMG GT">
-            <div class="car-info">
-                <h3>Mercedes AMG GT</h3>
-                <p>Raw power meets refined elegance.</p>
-                <span class="price">From $950 / day</span>
-                <button onclick="openModal()">Reserve Now</button>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="./content/rollsroyce.jpg" alt="Rolls-Royce Ghost">
-            <div class="car-info">
-                <h3>Rolls-Royce Ghost</h3>
-                <p>For those who need no introduction.</p>
-                <span class="price">From $2,000 / day</span>
-                <button onclick="openModal()">Reserve Now</button>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="./content/lamborghini.jpg" alt="Lamborghini Urus">
-            <div class="car-info">
-                <h3>Lamborghini Urus</h3>
-                <p>The super SUV that does it all.</p>
-                <span class="price">From $1,500 / day</span>
-                <button onclick="openModal()">Reserve Now</button>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="./content/porsche.jpg" alt="Porsche 911">
-            <div class="car-info">
-                <h3>Porsche 911</h3>
-                <p>An icon. Timeless and thrilling.</p>
-                <span class="price">From $800 / day</span>
-                <button onclick="openModal()">Reserve Now</button>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="./content/ferrari.jpg" alt="Ferrari Roma">
-            <div class="car-info">
-                <h3>Ferrari Roma</h3>
-                <p>Italian passion in its purest form.</p>
-                <span class="price">From $1,800 / day</span>
-                <button onclick="openModal()">Reserve Now</button>
-            </div>
-        </div>
-    </section>
-    <div class="modal-overlay" id="reserveModal">
+            <a href="about.html">About Our Company</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="catalogue-hero">
+            <h2>Our Luxury Fleet — Book Your Dream Car</h2>
+            <p>Choose your perfect ride from our fully insured, worldwide available fleet</p>
+        </section>
+
+        <section class="catalogue-grid" aria-label="Luxury cars available for rental">
+
+            <article class="car-card">
+                <img src="./content/bentley.jpg" alt="Bentley Flying Spur luxury sedan available for rent">
+                <div class="car-info">
+                    <h3>Bentley Flying Spur</h3>
+                    <p>The pinnacle of grand touring luxury. Reserve your Bentley Flying Spur today.</p>
+                    <span class="price">From $1,200 / day</span>
+                    <button onclick="openModal()">Reserve the Bentley Flying Spur</button>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="./content/mercedes.jpg" alt="Mercedes AMG GT sports car available for luxury rental">
+                <div class="car-info">
+                    <h3>Mercedes AMG GT</h3>
+                    <p>Raw power meets refined elegance. Rent a Mercedes AMG GT for any occasion.</p>
+                    <span class="price">From $950 / day</span>
+                    <button onclick="openModal()">Reserve the Mercedes AMG GT</button>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="./content/rollsroyce.jpg" alt="Rolls-Royce Ghost premium luxury car for private rental">
+                <div class="car-info">
+                    <h3>Rolls-Royce Ghost</h3>
+                    <p>For those who need no introduction. Rent a Rolls-Royce Ghost with full discretion.</p>
+                    <span class="price">From $2,000 / day</span>
+                    <button onclick="openModal()">Reserve the Rolls-Royce Ghost</button>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="./content/lamborghini.jpg" alt="Lamborghini Urus super SUV available for worldwide luxury rental">
+                <div class="car-info">
+                    <h3>Lamborghini Urus</h3>
+                    <p>The super SUV that does it all. Book your Lamborghini Urus for any occasion.</p>
+                    <span class="price">From $1,500 / day</span>
+                    <button onclick="openModal()">Reserve the Lamborghini Urus</button>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="./content/porsche.jpg" alt="Porsche 911 iconic sports car available for luxury car rental">
+                <div class="car-info">
+                    <h3>Porsche 911</h3>
+                    <p>An icon. Timeless and thrilling. Reserve your Porsche 911 today.</p>
+                    <span class="price">From $800 / day</span>
+                    <button onclick="openModal()">Reserve the Porsche 911</button>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="./content/ferrari.jpg" alt="Ferrari Roma Italian luxury sports car available for private rental">
+                <div class="car-info">
+                    <h3>Ferrari Roma</h3>
+                    <p>Italian passion in its purest form. Rent a Ferrari Roma for an unmatched experience.</p>
+                    <span class="price">From $1,800 / day</span>
+                    <button onclick="openModal()">Reserve the Ferrari Roma</button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-label="Reserve your luxury car">
         <div class="modal">
-            <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+            <button class="modal-close" onclick="closeModal()" aria-label="Close reservation form">&#x2715;</button>
             <h3>Reserve Your Car</h3>
             <form id="reserveForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="date" required>
-                <input type="date" required>
+                <input type="text" placeholder="Your Name" aria-label="Your full name" required>
+                <input type="tel" placeholder="Phone Number" aria-label="Your phone number" required>
+                <input type="email" placeholder="Email Address" aria-label="Your email address" required>
+                <input type="date" aria-label="Rental start date" required>
+                <input type="date" aria-label="Rental end date" required>
                 <div class="modal-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
                     <button type="submit" class="btn-confirm">Confirm Reservation</button>
@@ -94,9 +113,11 @@
             </form>
         </div>
     </div>
+
     <footer>
-        <p>&copy; 2024 Luxury Cars Rental</p>
+        <p>&copy; 2024 Luxury Cars Rental — Worldwide Luxury Car Rentals For High-Profile Clients</p>
     </footer>
+
     <script src="modal.js"></script>
 </body>
 </html>

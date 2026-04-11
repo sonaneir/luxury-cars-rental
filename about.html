@@ -3,79 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us — Luxury Cars Rental</title>
-    <link rel="stylesheet" href="styles-landing.css">
-    <link rel="stylesheet" href="styles-about.css">
-    <link rel="stylesheet" href="styles-modal.css">
+    <title>About Us | Seamless Luxury Car Rental & Private Car Rental Service</title>
+    <meta name="description" content="Experience the ultimate in luxury travel with our worldwide car rental service. Rent a fully insured luxury car for your next trip with complete discretion and a 24/7 personal concierge.">
+    <meta name="keywords" content="seamless luxury car rental, private car rental service, fully insured luxury fleet, experience unmatched luxury, 24/7 personal concierge, worldwide luxury car rentals, reserve your vehicle now, luxury cars for any occasion, seamless rental experience">
+    <link rel="stylesheet" href="./styles/styles-landing.css">
+    <link rel="stylesheet" href="./styles/styles-about.css">
+    <link rel="stylesheet" href="./styles/styles-modal.css">
 </head>
 <body>
-    <nav>
-        <a href="catalogue.html">View Catalogue</a>
-        <div>
-            <h1>Luxury Cars Rental</h1>
-            <p>Driven by Perfection</p>
-        </div>
-        <a href="index.html">Home</a>
-    </nav>
-    <section class="about-hero">
-        <h2>About Us</h2>
-        <p>Our story, our mission</p>
-    </section>
-    <section class="about-content">
-        <div class="about-block">
-            <div class="about-text">
-                <h3>Who We Are</h3>
-                <p>Welcome to Luxury Cars Rental, where comfort, performance, and prestige come together to create an unforgettable driving experience. Our company was founded with a clear mission: to provide customers with access to the world's most exclusive and high-performance vehicles while delivering exceptional service and convenience.</p>
+
+    <header>
+        <nav>
+            <a href="catalogue.html">View Our Car Catalogue</a>
+            <div>
+                <h1>Luxury Cars Rental</h1>
+                <p>Driven by Perfection</p>
             </div>
-            <img src="./content/crew.webp" alt="Who We Are">
-        </div>
-        <div class="about-block reverse">
-            <div class="about-text">
-                <h3>Our Fleet</h3>
-                <p>Our fleet features a carefully selected range of world-class vehicles known for their elegance, innovation, and performance. From sophisticated executive sedans and powerful sports cars to prestigious SUVs, every vehicle is regularly inspected, professionally cleaned, and equipped with the latest technology.</p>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="about-hero">
+            <h2>About Our Luxury Car Rental Service</h2>
+            <p>Our story, our mission — delivering a seamless rental experience worldwide</p>
+        </section>
+
+        <section class="about-content" aria-label="About Luxury Cars Rental">
+
+            <article class="about-block">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>Welcome to Luxury Cars Rental, where comfort, performance, and prestige come together to create an unforgettable driving experience. Our company was founded with a clear mission: to provide customers with access to the world's most exclusive and high-performance vehicles while delivering exceptional service and convenience. We are a private car rental service built for those who expect nothing less than perfection.</p>
+                </div>
+                <img src="./content/crew.webp" alt="Luxury Cars Rental team — professionals dedicated to seamless service">
+            </article>
+
+            <article class="about-block reverse">
+                <div class="about-text">
+                    <h3>Our Fully Insured Luxury Fleet</h3>
+                    <p>Our fleet features a carefully selected range of world-class vehicles known for their elegance, innovation, and performance. From sophisticated executive sedans and powerful sports cars to prestigious SUVs — every vehicle is fully insured, regularly inspected, professionally cleaned, and equipped with the latest technology. Worldwide car availability means you can reserve your vehicle in any major city.</p>
+                </div>
+                <img src="./content/fleet.webp" alt="Our fully insured luxury fleet of premium rental cars including Rolls-Royce, Bentley and Ferrari">
+            </article>
+
+            <article class="about-block">
+                <div class="about-text">
+                    <h3>Our Promise — Unmatched Luxury &amp; Discretion</h3>
+                    <p>Customer satisfaction is at the heart of everything we do. We offer flexible rental options, simple booking processes, and a 24/7 personal concierge to help you choose the perfect car for your needs. Complete privacy and discretion are guaranteed — especially for high-profile clients who require a seamless, confidential rental experience.</p>
+                </div>
+                <img src="./content/partners.jpeg" alt="Our partners and commitment to unmatched luxury and complete client discretion">
+            </article>
+
+        </section>
+
+        <section class="about-stats" aria-label="Luxury Cars Rental by the numbers">
+            <div class="stat">
+                <span>500+</span>
+                <p>Happy Clients</p>
             </div>
-            <img src="./content/fleet.webp" alt="Our Fleet">
-        </div>
-        <div class="about-block">
-            <div class="about-text">
-                <h3>Our Promise</h3>
-                <p>Customer satisfaction is at the heart of everything we do. We offer flexible rental options, simple booking processes, and personalized assistance to help you choose the perfect car for your needs.</p>
+            <div class="stat">
+                <span>50+</span>
+                <p>Cars in Fleet</p>
             </div>
-            <img src="./content/partners.jpeg" alt="Our Promise">
-        </div>
-    </section>
-    <section class="about-stats">
-        <div class="stat">
-            <span>500+</span>
-            <p>Happy Clients</p>
-        </div>
-        <div class="stat">
-            <span>50+</span>
-            <p>Cars in Fleet</p>
-        </div>
-        <div class="stat">
-            <span>20+</span>
-            <p>Cities Worldwide</p>
-        </div>
-        <div class="stat">
-            <span>5★</span>
-            <p>Average Rating</p>
-        </div>
-    </section>
-    <section class="cta">
-        <h2>Ready to Drive the Extraordinary?</h2>
-        <button onclick="openModal()">Reserve Your Car Today</button>
-    </section>
-    <div class="modal-overlay" id="reserveModal">
+            <div class="stat">
+                <span>20+</span>
+                <p>Cities Worldwide</p>
+            </div>
+            <div class="stat">
+                <span>5★</span>
+                <p>Average Rating</p>
+            </div>
+        </section>
+
+        <section class="cta" aria-label="Reserve your luxury car">
+            <h2>Ready to Drive the Extraordinary?</h2>
+            <button onclick="openModal()">Reserve Your Car Today</button>
+        </section>
+
+    </main>
+
+    <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-label="Reserve your luxury car">
         <div class="modal">
-            <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+            <button class="modal-close" onclick="closeModal()" aria-label="Close reservation form">&#x2715;</button>
             <h3>Reserve Your Car</h3>
             <form id="reserveForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="date" required>
-                <input type="date" required>
+                <input type="text" placeholder="Your Name" aria-label="Your full name" required>
+                <input type="tel" placeholder="Phone Number" aria-label="Your phone number" required>
+                <input type="email" placeholder="Email Address" aria-label="Your email address" required>
+                <input type="date" aria-label="Rental start date" required>
+                <input type="date" aria-label="Rental end date" required>
                 <div class="modal-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
                     <button type="submit" class="btn-confirm">Confirm Reservation</button>
@@ -83,9 +101,11 @@
             </form>
         </div>
     </div>
+
     <footer>
-        <p>&copy; 2024 Luxury Cars Rental</p>
+        <p>&copy; 2024 Luxury Cars Rental — Experience Unmatched Luxury Worldwide</p>
     </footer>
+
     <script src="modal.js"></script>
 </body>
 </html>
