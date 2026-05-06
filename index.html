@@ -8,64 +8,66 @@
     <meta name="keywords" content="luxury car rental, rent a luxury car today, book your dream car, private car rental service, VIP airport car delivery, 24/7 personal concierge, fully insured luxury fleet, worldwide car availability, rent a Rolls-Royce Ghost">
     <link rel="stylesheet" href="./styles/styles-landing.css">
     <link rel="stylesheet" href="./styles/styles-modal.css">
-    <style>
-h1 { font-size: 32px; }
-h2 { font-size: 22px; }
-</style>
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="catalogue.html">View Our Car Catalogue</a>
+            <a href="catalogue.html">View Catalogue</a>
             <div>
                 <h1>Luxury Cars Rental</h1>
                 <p>Driven by Perfection</p>
             </div>
-            <a href="about.html">About Our Company</a>
+            <a href="about.html">About Us</a>
         </nav>
     </header>
 
     <main>
 
-        <section class="hero" style="background-image: url('./content/rollsroyce.jpg'); background-size: cover; background-position: center;">
+        <section class="hero" style="background-image: url('./content/rollsroyce.jpg');">
             <h2>Rent a Rolls-Royce Ghost</h2>
-            <p>For those who need no introduction. Book your luxury car today.</p>
-            <button style="color: white; border-color: white;" onclick="openModal()">Reserve Your Car Now</button>
+            <p>For those who need no introduction. Reserve your luxury car today and experience travel reimagined.</p>
+            <button onclick="openModal()">Reserve Your Car</button>
         </section>
 
         <section class="services" aria-label="Our luxury car rental services">
-            <article class="card">
-                <img src="./content/concierge.jpg" alt="24/7 personal concierge service for luxury car rental clients">
-                <h3>24/7 Personal Concierge</h3>
-                <p>Available around the clock to assist with reservations and ensure a seamless rental experience.</p>
-            </article>
-            <article class="card">
-                <img src="./content/airport.png" alt="VIP airport car delivery service for private jet terminals and hotels">
-                <h3>VIP Airport Car Delivery</h3>
-                <p>Your luxury car delivered to your private jet terminal or hotel — seamless and discreet.</p>
-            </article>
-            <article class="card">
-                <img src="./content/car.webp" alt="Fully insured luxury fleet of premium rental vehicles">
-                <h3>Fully Insured Luxury Fleet</h3>
-                <p>Every vehicle in our fleet is fully insured and meticulously maintained for your peace of mind.</p>
-            </article>
-            <article class="card">
-                <img src="./content/global.jpg" alt="Worldwide luxury car availability from Dubai to Monaco">
-                <h3>Worldwide Car Availability</h3>
-                <p>Reserve your car worldwide — from Dubai to Monaco, we are there.</p>
-            </article>
-            <article class="card">
-                <img src="./content/privacy.jpg" alt="Privacy and discretion service for high-profile luxury car rental clients">
-                <h3>Privacy &amp; Discretion</h3>
-                <p>Complete discretion and privacy for high-profile clients. Your identity stays protected.</p>
-            </article>
+            <div class="services-heading">
+                <h2>Our Services</h2>
+                <p>Crafted for the discerning few</p>
+            </div>
+            <div class="services-grid">
+                <article class="card">
+                    <img src="./content/concierge.jpg" alt="24/7 personal concierge service for luxury car rental clients">
+                    <h3>24/7 Personal Concierge</h3>
+                    <p>Available around the clock to assist with reservations and ensure a seamless rental experience.</p>
+                </article>
+                <article class="card">
+                    <img src="./content/airport.png" alt="VIP airport car delivery service for private jet terminals and hotels">
+                    <h3>VIP Airport Delivery</h3>
+                    <p>Your luxury car delivered to your private jet terminal or hotel — seamless and discreet.</p>
+                </article>
+                <article class="card">
+                    <img src="./content/car.webp" alt="Fully insured luxury fleet of premium rental vehicles">
+                    <h3>Fully Insured Fleet</h3>
+                    <p>Every vehicle in our fleet is fully insured and meticulously maintained for your peace of mind.</p>
+                </article>
+                <article class="card">
+                    <img src="./content/global.jpg" alt="Worldwide luxury car availability from Dubai to Monaco">
+                    <h3>Worldwide Availability</h3>
+                    <p>Reserve your car worldwide — from Dubai to Monaco, we are there.</p>
+                </article>
+                <article class="card">
+                    <img src="./content/privacy.jpg" alt="Privacy and discretion service for high-profile luxury car rental clients">
+                    <h3>Privacy &amp; Discretion</h3>
+                    <p>Complete discretion and privacy for high-profile clients. Your identity stays protected.</p>
+                </article>
+            </div>
         </section>
 
         <section class="testimonial" aria-label="Client testimonial">
             <blockquote>
-                <p>"Everything was seamless from start to finish. I'll definitely be booking again."</p>
-                <cite>— Daniel R. ★★★★★</cite>
+                <p>Everything was seamless from start to finish. I'll definitely be booking again.</p>
+                <cite>Daniel R. &nbsp;★★★★★</cite>
             </blockquote>
         </section>
 
@@ -88,14 +90,14 @@ h2 { font-size: 22px; }
                 <input type="date" aria-label="Rental end date" required>
                 <div class="modal-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="btn-confirm">Confirm Reservation</button>
+                    <button type="submit" class="btn-confirm">Confirm</button>
                 </div>
             </form>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Luxury Cars Rental — Seamless Luxury Car Rental Worldwide</p>
+        <p>&copy; 2024 Luxury Cars Rental — Seamless Luxury Worldwide</p>
     </footer>
 
     <script src="modal.js"></script>
