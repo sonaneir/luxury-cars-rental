@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes it responsive on mobile -->
     <title>Seamless Luxury Car Rental | Book Your Dream Car Today</title>
-    <meta name="description" content="Experience the extraordinary with our luxury car rentals. Reserve your dream car now. Enjoy seamless luxury travel with our worldwide car rental service and personal concierge.">
-    <meta name="keywords" content="luxury car rental, rent a luxury car today, book your dream car, private car rental service, VIP airport car delivery, 24/7 personal concierge, fully insured luxury fleet, worldwide car availability, rent a Rolls-Royce Ghost">
-    <link rel="stylesheet" href="./styles/styles-landing.css">
-    <link rel="stylesheet" href="./styles/styles-modal.css">
+    <meta name="description" content="..."> <!-- SEO description for search engines -->
+    <meta name="keywords" content="..."> <!-- SEO keywords -->
+    <link rel="stylesheet" href="./styles/styles-landing.css"> <!-- main page styles -->
+    <link rel="stylesheet" href="./styles/styles-modal.css"> <!-- styles for the popup -->
 </head>
 <body>
 
+    <!-- top navigation bar -->
     <header>
         <nav>
             <a href="catalogue.html">View Catalogue</a>
@@ -24,19 +25,22 @@
 
     <main>
 
+        <!-- hero section with background image and main call to action -->
         <section class="hero" style="background-image: url('./content/rollsroyce.jpg');">
             <h2>Rent a Rolls-Royce Ghost</h2>
             <p>For those who need no introduction. Reserve your luxury car today and experience travel reimagined.</p>
-            <button onclick="openModal()">Reserve Your Car</button>
+            <button onclick="openModal()">Reserve Your Car</button> <!-- opens the popup form -->
         </section>
 
+        <!-- services section -->
         <section class="services" aria-label="Our luxury car rental services">
             <div class="services-heading">
                 <h2>Our Services</h2>
                 <p>Crafted for the discerning few</p>
             </div>
+            <!-- grid of service cards -->
             <div class="services-grid">
-                <article class="card">
+                <article class="card"> <!-- one service card -->
                     <img src="./content/concierge.png" alt="24/7 personal concierge service for luxury car rental clients">
                     <h3>24/7 Personal Concierge</h3>
                     <p>Available around the clock to assist with reservations and ensure a seamless rental experience.</p>
@@ -64,6 +68,7 @@
             </div>
         </section>
 
+        <!-- customer review -->
         <section class="testimonial" aria-label="Client testimonial">
             <blockquote>
                 <p>Everything was seamless from start to finish. I'll definitely be booking again.</p>
@@ -71,6 +76,7 @@
             </blockquote>
         </section>
 
+        <!-- second call to action near the bottom -->
         <section class="cta" aria-label="Book your luxury car">
             <h2>Ready to Drive the Extraordinary?</h2>
             <button onclick="openModal()">Reserve Your Car Today</button>
@@ -78,28 +84,30 @@
 
     </main>
 
+    <!-- popup modal with the reservation form (hidden until openModal runs) -->
     <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-label="Reserve your luxury car">
         <div class="modal">
-            <button class="modal-close" onclick="closeModal()" aria-label="Close reservation form">&#x2715;</button>
+            <button class="modal-close" onclick="closeModal()" aria-label="Close reservation form">&#x2715;</button> <!-- X button to close -->
             <h3>Reserve Your Car</h3>
             <form id="reserveForm">
                 <input type="text" placeholder="Your Name" aria-label="Your full name" required>
                 <input type="tel" placeholder="Phone Number" aria-label="Your phone number" required>
                 <input type="email" placeholder="Email Address" aria-label="Your email address" required>
-                <input type="date" aria-label="Rental start date" required>
-                <input type="date" aria-label="Rental end date" required>
+                <input type="date" aria-label="Rental start date" required> <!-- rental start -->
+                <input type="date" aria-label="Rental end date" required> <!-- rental end -->
                 <div class="modal-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="btn-confirm">Confirm</button>
+                    <button type="submit" class="btn-confirm">Confirm</button> <!-- submits the form -->
                 </div>
             </form>
         </div>
     </div>
 
+    <!-- page footer -->
     <footer>
         <p>&copy; 2024 Luxury Cars Rental — Seamless Luxury Worldwide</p>
     </footer>
 
-    <script src="modal.js"></script>
+    <script src="modal.js"></script> <!-- JS file that runs the modal open/close logic -->
 </body>
 </html>

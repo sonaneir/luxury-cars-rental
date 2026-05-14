@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive on mobile -->
     <title>About Us | Seamless Luxury Car Rental & Private Car Rental Service</title>
-    <meta name="description" content="Experience the ultimate in luxury travel with our worldwide car rental service. Rent a fully insured luxury car for your next trip with complete discretion and a 24/7 personal concierge.">
-    <meta name="keywords" content="seamless luxury car rental, private car rental service, fully insured luxury fleet, experience unmatched luxury, 24/7 personal concierge, worldwide luxury car rentals, reserve your vehicle now, luxury cars for any occasion, seamless rental experience">
-    <link rel="stylesheet" href="./styles/styles-landing.css">
-    <link rel="stylesheet" href="./styles/styles-about.css">
-    <link rel="stylesheet" href="./styles/styles-modal.css">
+    <meta name="description" content="..."> <!-- SEO description -->
+    <meta name="keywords" content="..."> <!-- SEO keywords -->
+    <link rel="stylesheet" href="./styles/styles-landing.css"> <!-- shared base styles -->
+    <link rel="stylesheet" href="./styles/styles-about.css"> <!-- styles specific to this about page -->
+    <link rel="stylesheet" href="./styles/styles-modal.css"> <!-- styles for the popup -->
 </head>
 <body>
 
+    <!-- top navigation bar -->
     <header>
         <nav>
             <a href="catalogue.html">View Catalogue</a>
@@ -25,14 +26,16 @@
 
     <main>
 
+        <!-- small intro section at the top of the page -->
         <section class="about-hero">
             <h2>About Our House</h2>
             <p>Our story, our promise</p>
         </section>
 
+        <!-- main about content with text + image blocks -->
         <section class="about-content" aria-label="About Luxury Cars Rental">
 
-            <article class="about-block">
+            <article class="about-block"> <!-- text on left, image on right -->
                 <div class="about-text">
                     <h3>Who We Are</h3>
                     <p>Welcome to Luxury Cars Rental, where comfort, performance, and prestige come together to create an unforgettable driving experience. Our company was founded with a clear mission: to provide customers with access to the world's most exclusive and high-performance vehicles while delivering exceptional service and convenience. We are a private car rental service built for those who expect nothing less than perfection.</p>
@@ -40,7 +43,7 @@
                 <img src="./content/crew.png" alt="Luxury Cars Rental team — professionals dedicated to seamless service">
             </article>
 
-            <article class="about-block reverse">
+            <article class="about-block reverse"> <!-- 'reverse' flips the layout: image on left -->
                 <div class="about-text">
                     <h3>Our Fully Insured Fleet</h3>
                     <p>Our fleet features a carefully selected range of world-class vehicles known for their elegance, innovation, and performance. From sophisticated executive sedans and powerful sports cars to prestigious SUVs — every vehicle is fully insured, regularly inspected, professionally cleaned, and equipped with the latest technology. Worldwide car availability means you can reserve your vehicle in any major city.</p>
@@ -48,7 +51,7 @@
                 <img src="./content/fleet.png" alt="Our fully insured luxury fleet of premium rental cars including Rolls-Royce, Bentley and Ferrari">
             </article>
 
-            <article class="about-block">
+            <article class="about-block"> <!-- back to text on left, image on right -->
                 <div class="about-text">
                     <h3>Our Promise</h3>
                     <p>Customer satisfaction is at the heart of everything we do. We offer flexible rental options, simple booking processes, and a 24/7 personal concierge to help you choose the perfect car for your needs. Complete privacy and discretion are guaranteed — especially for high-profile clients who require a seamless, confidential rental experience.</p>
@@ -58,8 +61,9 @@
 
         </section>
 
+        <!-- stats row showing company numbers -->
         <section class="about-stats" aria-label="Luxury Cars Rental by the numbers">
-            <div class="stat">
+            <div class="stat"> <!-- one stat -->
                 <span>500+</span>
                 <p>Happy Clients</p>
             </div>
@@ -77,35 +81,38 @@
             </div>
         </section>
 
+        <!-- call to action near the bottom -->
         <section class="cta" aria-label="Reserve your luxury car">
             <h2>Ready to Drive the Extraordinary?</h2>
-            <button onclick="openModal()">Reserve Your Car Today</button>
+            <button onclick="openModal()">Reserve Your Car Today</button> <!-- opens the popup form -->
         </section>
 
     </main>
 
+    <!-- popup modal with the reservation form (same one used on every page, hidden until openModal runs) -->
     <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-label="Reserve your luxury car">
         <div class="modal">
-            <button class="modal-close" onclick="closeModal()" aria-label="Close reservation form">&#x2715;</button>
+            <button class="modal-close" onclick="closeModal()" aria-label="Close reservation form">&#x2715;</button> <!-- X button to close -->
             <h3>Reserve Your Car</h3>
             <form id="reserveForm">
                 <input type="text" placeholder="Your Name" aria-label="Your full name" required>
                 <input type="tel" placeholder="Phone Number" aria-label="Your phone number" required>
                 <input type="email" placeholder="Email Address" aria-label="Your email address" required>
-                <input type="date" aria-label="Rental start date" required>
-                <input type="date" aria-label="Rental end date" required>
+                <input type="date" aria-label="Rental start date" required> <!-- rental start -->
+                <input type="date" aria-label="Rental end date" required> <!-- rental end -->
                 <div class="modal-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="btn-confirm">Confirm</button>
+                    <button type="submit" class="btn-confirm">Confirm</button> <!-- submits the form -->
                 </div>
             </form>
         </div>
     </div>
 
+    <!-- page footer -->
     <footer>
         <p>&copy; 2024 Luxury Cars Rental — Experience Unmatched Luxury Worldwide</p>
     </footer>
 
-    <script src="modal.js"></script>
+    <script src="modal.js"></script> <!-- JS file that runs the modal open/close logic -->
 </body>
 </html>
